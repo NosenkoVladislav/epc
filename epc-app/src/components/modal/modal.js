@@ -1,9 +1,9 @@
 import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
 import { Modal } from "react-bootstrap";
-import ModalInput from "./modal-input";
+import ModalInput from "./Modal-input";
 import ApiService from "../../services/apiService";
-import Btn from "../btn/btn";
+import Btn from "../Btn/Btn";
 
 const InfoModal = ({ hideModal, user, handleData }) => {
   const [userData, setData] = useState({

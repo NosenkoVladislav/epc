@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import ApiService from "./services/apiService";
 import { ListGroup } from "react-bootstrap";
-import "./App.scss";
-import UserItem from "./components/user-item/user-item";
-import InfoModal from "./components/modal/modal";
+import UserItem from "./components/User-item/User-item";
+import InfoModal from "./components/Modal/Modal";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
+import "./App.scss";
 
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -35,7 +35,7 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className="app">
       <DragDropContext onDragEnd={onDragEnd}>
         <Droppable droppableId="droppable">
           {(provided) => (
